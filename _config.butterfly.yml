@@ -14,8 +14,8 @@ menu:
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   社交 || fas fa-share-alt:
-    留言板: /comments/ || fas fa-envelope-open 
-  列表 || fas fa-list:
+    留言板: /comments/ || fas fa-envelope-open
+  列表 || fas fa-list || hide:
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video
   友链: /link/ || fas fa-link
@@ -53,7 +53,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: 
+index_img:
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
@@ -89,13 +89,13 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - /img/background/img-butterfly-2.jpg
-    # - /img/background/img-butterfly-3.jpg
-    # - /img/background/img-butterfly-4.jpg
-    # - /img/background/img-butterfly-5.jpg
-    # - /img/background/img-butterfly-6.jpg
-    # - /img/background/img-butterfly-7.jpg
-    # - /img/background/img-butterfly-8.jpg
+    - /img/background/img-butterfly-2.jpg
+    - /img/background/img-butterfly-3.jpg
+    - /img/background/img-butterfly-4.jpg
+    - /img/background/img-butterfly-5.jpg
+    - /img/background/img-butterfly-6.jpg
+    - /img/background/img-butterfly-7.jpg
+    - /img/background/img-butterfly-8.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -738,14 +738,14 @@ beautify:
 font:
   global-font-size: 15px
   code-font-size: 14px
-  font-family: -"Times New Roman","Arial","Courier New" "Brush Script MT" "Papyrus" "Roboto" "Open Sans" "Lato" "Montserrat" "Oswald" serif sans-serif monospace cursive fantasy;
-  code-font-family:
+  font-family: YSHST,-"Times New Roman","Arial","Courier New" "Brush Script MT" "Papyrus" "Roboto" "Open Sans" "Lato" "Montserrat" "Oswald" serif sans-serif monospace cursive fantasy;
+  code-font-family: YSHST
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link:
-  font-family: -"Times New Roman", "Arial", "Courier New", "Brush Script MT", "Papyrus", "Roboto", "Open Sans", "Lato", "Montserrat", "Oswald", serif, sans-serif, monospace, cursive, fantasy;
+  font-family: YSHST -"Times New Roman", "Arial", "Courier New", "Brush Script MT", "Papyrus", "Roboto", "Open Sans", "Lato", "Montserrat", "Oswald", serif, sans-serif, monospace, cursive, fantasy;
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -916,7 +916,12 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/darkLight.css">
+    - <link rel="stylesheet" href="/css/universe.css">
   bottom:
+    - <canvas id="universe"></canvas>
+    - <script defer src="/js/universe.js"></script>
+    # - <script defer src="/js/light.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN
@@ -997,3 +1002,25 @@ CDN:
     # artalk_css:
     # busuanzi:
     # abcjs_basic_js:
+
+# electric_clock (安知鱼电子钟)
+# see https://anzhiy.cn/posts/fc18.html
+electric_clock:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  exclude:
+    # - /posts/
+    # - /about/
+  layout: # 挂载容器类型
+    type: class
+    name: sticky_layout
+    index: 0
+  loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义
+  clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css
+  clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js
+  ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
+  qweather_key: # 和风天气key
+  gaud_map_key: # 高得地图web服务key
+  default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
+  rectangle: 113.34532,23.15624 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
