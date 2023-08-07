@@ -921,6 +921,7 @@ inject:
   bottom:
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
+    - <script defer src="/js/cursor.js"></script>
     # - <script defer src="/js/light.js"></script>
     # - <script src="xxxx"></script>
 
