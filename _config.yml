@@ -125,7 +125,7 @@ live2d:
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
   model:
-    use: live2d-widget-model-shizuku # npm-module package name
+    use: live2d-widget-model-z16 # npm-module package name
     # use: wanko # 博客根目录/live2d_models/ 下的目录名
     # use: ./wives/wanko # 相对于博客根目录的路径
     # use: https://npm.elemecdn.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
@@ -217,17 +217,17 @@ categoryBar:
     type: id
     name: recent-posts
     index: 0
-  column: odd # odd：3列 | even：4列
+  column: even # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
     - descr: 这是react
-      cover: /img/background/img-butterfly-8.jpg
+      cover: /img/background/img-avatar-6.webp
     - descr: 这是vue
-      cover: /img/background/img-butterfly-7.jpg
+      cover: /img/background/img-avatar-7.webp
     - descr: 这是git
-      cover: /img/background/img-butterfly-6.jpg
+      cover: /img/background/img-avatar-8.webp
     - descr: 这是计算机网络
-      cover: /img/background/img-butterfly-5.jpg
+      cover: /img/background/img-avatar-9.webp
 
   custom_css: /css/categories.css
 
@@ -235,7 +235,7 @@ categoryBar:
 # see https://akilar.top/posts/8e1264d1/
 swiper:
   enable: true # 开关
-  priority: 5 #过滤器优先权
+  priority: 6 #过滤器优先权
   enable_page: / # 应用页面 /首页  all所有
   timemode: date #date/updated
   layout: # 挂载容器类型

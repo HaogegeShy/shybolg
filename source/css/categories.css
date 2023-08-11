@@ -78,7 +78,7 @@ span.categoryBar-list-descr {
 @media screen and (max-width: 650px) {
   li.categoryBar-list-item {
     width: 48% !important;
-    height: 150px !important;
+    height: auto !important;
     margin: 5px 1% 0 1% !important;
   }
 }
