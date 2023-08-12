@@ -89,22 +89,23 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - /img/background/img-avatar-1.webp
-    - /img/background/img-avatar-2.webp
-    - /img/background/img-avatar-3.webp
-    - /img/background/img-avatar-4.webp
-    - /img/background/img-avatar-5.webp
-    - /img/background/img-avatar-6.webp
-    - /img/background/img-avatar-7.webp
-    - /img/background/img-avatar-8.webp
-    - /img/background/img-avatar-9.webp
-    - /img/background/img-avatar-10.webp
-    - /img/background/img-avatar-11.webp
-    - /img/background/img-avatar-12.webp
-    - /img/background/img-avatar-13.webp
-    - /img/background/img-avatar-14.webp
-    - /img/background/img-avatar-15.webp
-    - /img/background/img-avatar-16.webp
+    - https://img.lrshy.cn/avatar/img-avatar-1.webp
+    - https://img.lrshy.cn/avatar/img-avatar-2.webp
+    - https://img.lrshy.cn/avatar/img-avatar-3.webp
+    - https://img.lrshy.cn/avatar/img-avatar-4.webp
+    - https://img.lrshy.cn/avatar/img-avatar-5.webp
+    - https://img.lrshy.cn/avatar/img-avatar-6.webp
+    - https://img.lrshy.cn/avatar/img-avatar-7.webp
+    - https://img.lrshy.cn/avatar/img-avatar-8.webp
+    - https://img.lrshy.cn/avatar/img-avatar-9.webp
+    - https://img.lrshy.cn/avatar/img-avatar-10.webp
+    - https://img.lrshy.cn/avatar/img-avatar-11.webp
+    - https://img.lrshy.cn/avatar/img-avatar-12.webp
+    - https://img.lrshy.cn/avatar/img-avatar-13.webp
+    - https://img.lrshy.cn/avatar/img-avatar-14.webp
+    - https://img.lrshy.cn/avatar/img-avatar-15.webp
+    - https://img.lrshy.cn/avatar/img-avatar-16.webp
+    
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
   flink: /img/friend_404.gif
@@ -656,7 +657,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(/img/background/img-bg-1.webp)
+background: url(https://img.lrshy.cn/background/img-bg-1.webp)
 
 # Footer Background
 footer_bg: false

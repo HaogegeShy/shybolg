@@ -221,13 +221,13 @@ categoryBar:
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
     - descr: 这是react
-      cover: /img/background/img-avatar-6.webp
+      cover: https://img.lrshy.cn/avatar/img-avatar-10.webp
     - descr: 这是vue
-      cover: /img/background/img-avatar-7.webp
+      cover: https://img.lrshy.cn/avatar/img-avatar-11.webp
     - descr: 这是git
-      cover: /img/background/img-avatar-8.webp
+      cover: https://img.lrshy.cn/avatar/img-avatar-12.webp
     - descr: 这是计算机网络
-      cover: /img/background/img-avatar-9.webp
+      cover: https://img.lrshy.cn/avatar/img-avatar-13.webp
 
   custom_css: /css/categories.css
 
