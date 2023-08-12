@@ -5,6 +5,7 @@
   --backdrop-filter: blur(5px) saturate(150%);
 }
 
+
 #recent-posts>.recent-post-item .post_cover{
   height: auto !important;
 }
@@ -270,3 +271,13 @@ div#archive {
   background: rgba(25, 25, 25, 0.9) !important;
   color: #ffffff;
 }
+
+/* 图标 */
+@import "//at.alicdn.com/t/c/font_4208366_i535svspgd8.css";
+svg.icon {
+  width: 1.28em;
+  height: 1.28em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+} 
