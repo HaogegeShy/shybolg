@@ -8,7 +8,7 @@ subtitle: ''
 description: '博客'
 keywords: '博客'
 author: Haoyong Song
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -221,13 +221,13 @@ categoryBar:
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
     - descr: 这是react
-      cover: https://img.lrshy.cn/avatar/img-avatar-10.webp
+      cover: /img/background/img-avatar-12.webp
     - descr: 这是vue
-      cover: https://img.lrshy.cn/avatar/img-avatar-11.webp
+      cover: /img/background/img-avatar-13.webp
     - descr: 这是git
-      cover: https://img.lrshy.cn/avatar/img-avatar-12.webp
+      cover: /img/background/img-avatar-14.webp
     - descr: 这是计算机网络
-      cover: https://img.lrshy.cn/avatar/img-avatar-13.webp
+      cover: /img/background/img-avatar-15.webp
 
   custom_css: /css/categories.css
 
@@ -319,3 +319,9 @@ tag_plugins:
     iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+
+
+# 音乐插件 跑不起来
+aplayer: 
+  meting: false
+  asset_inject: false

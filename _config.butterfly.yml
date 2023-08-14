@@ -13,13 +13,13 @@ menu:
   归档: /archives/ || icon-dangan || faa-tada
   标签: /tags/ || icon-biaoqian || faa-tada
   分类: /categories/ || icon-fenlei || faa-tada
-  社交 || icon-shejiao:
+  社交 || icon-tubiaozhizuomoban || faa-tada:
     留言板: /comments/ ||  icon-liuyanban || faa-tada
-  列表 || icon-liebiao || hide:
+  列表 || icon-liebiao || faa-tada:
     音乐: /music/ || icon-yinleshu || faa-tada
     电影: /movies/ || icon-weidianying || faa-tada
-  友链: /link/ || icon-youlian || faa-tada
-  关于: /about/ || icon-guanyu || faa-tada
+  友链: /link/ || icon-lianjie || faa-tada
+  关于: /about/ || icon-aixin || faa-tada
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -36,7 +36,7 @@ code_word_wrap: false
 #   icon: link || the description || color
 social:
   fab fa-github: https://github.com/HaogegeShy || icon-github || faa-tada
-  fas fa-envelope: 1693203298@qq.com || icon-youjian || faa-tada
+  fas fa-envelope: 1693203298@qq.com || icon-xinfengxinjianyouxiangxianhuaxinfeng || faa-tada
 
 # Image (圖片設置)
 # --------------------------------------
@@ -89,22 +89,39 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://img.lrshy.cn/avatar/img-avatar-1.webp
-    - https://img.lrshy.cn/avatar/img-avatar-2.webp
-    - https://img.lrshy.cn/avatar/img-avatar-3.webp
-    - https://img.lrshy.cn/avatar/img-avatar-4.webp
-    - https://img.lrshy.cn/avatar/img-avatar-5.webp
-    - https://img.lrshy.cn/avatar/img-avatar-6.webp
-    - https://img.lrshy.cn/avatar/img-avatar-7.webp
-    - https://img.lrshy.cn/avatar/img-avatar-8.webp
-    - https://img.lrshy.cn/avatar/img-avatar-9.webp
-    - https://img.lrshy.cn/avatar/img-avatar-10.webp
-    - https://img.lrshy.cn/avatar/img-avatar-11.webp
-    - https://img.lrshy.cn/avatar/img-avatar-12.webp
-    - https://img.lrshy.cn/avatar/img-avatar-13.webp
-    - https://img.lrshy.cn/avatar/img-avatar-14.webp
-    - https://img.lrshy.cn/avatar/img-avatar-15.webp
-    - https://img.lrshy.cn/avatar/img-avatar-16.webp
+    - /img/background/img-avatar-1.webp
+    - /img/background/img-avatar-2.webp
+    - /img/background/img-avatar-3.webp
+    - /img/background/img-avatar-4.webp
+    - /img/background/img-avatar-5.webp
+    - /img/background/img-avatar-6.webp
+    - /img/background/img-avatar-7.webp
+    - /img/background/img-avatar-8.webp
+    - /img/background/img-avatar-9.webp
+    - /img/background/img-avatar-10.webp
+    - /img/background/img-avatar-11.webp
+    - /img/background/img-avatar-12.webp
+    - /img/background/img-avatar-13.webp
+    - /img/background/img-avatar-14.webp
+    - /img/background/img-avatar-15.webp
+    - /img/background/img-avatar-16.webp
+
+    # - https://img.lrshy.cn/avatar/img-avatar-1.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-2.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-3.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-4.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-5.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-6.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-7.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-8.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-9.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-10.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-11.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-12.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-13.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-14.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-15.webp
+    # - https://img.lrshy.cn/avatar/img-avatar-16.webp
     
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -173,7 +190,7 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -657,7 +674,11 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://img.lrshy.cn/background/img-bg-1.webp)
+background: 
+  default: url(/img/background/img-bg-1.webp)
+  darkmode: url(/img/backgroundimg-avatar-3.webp) #【可选】PC端夜间模式背景
+  mobileday: #【可选】移动端日间默认背景
+  mobilenight: #【可选】移动端夜间模式背景
 
 # Footer Background
 footer_bg: false
@@ -927,11 +948,19 @@ inject:
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/darkLight.css">
     - <link rel="stylesheet" href="/css/universe.css">
+    - <link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"> 
+    - <link rel="stylesheet" href="/css/cat.css">
+    
   bottom:
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
     - <script defer src="/js/cursor.js"></script>
-    - <script async src="//at.alicdn.com/t/c/font_4208366_i535svspgd8.js"></script> 
+    - <script async src="//at.alicdn.com/t/c/font_4208366_f8zdsy53p.js"></script>
+    # - <div class="aplayer no-destroy"  data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="true"> </div>
+    - <div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div> 
+    - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
+    - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+    - <script defer data-pjax src="/js/cat.js"></script>
     # - <script defer src="/js/light.js"></script>
     # - <script src="xxxx"></script>
 
