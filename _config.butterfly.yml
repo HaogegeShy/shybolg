@@ -675,8 +675,8 @@ tag_ui: # 留空或 index
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 background: 
-  default: url(/img/background/img-bg-1.webp)
-  darkmode: url(/img/backgroundimg-avatar-3.webp) #【可选】PC端夜间模式背景
+  default:  url(/img/background/img-avatar-3.webp) #【必选】默认背景
+  darkmode: url(/img/background/img-bg-1.webp) #【可选】PC端夜间模式背景
   mobileday: #【可选】移动端日间默认背景
   mobilenight: #【可选】移动端夜间模式背景
 
@@ -950,6 +950,8 @@ inject:
     - <link rel="stylesheet" href="/css/universe.css">
     - <link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"> 
     - <link rel="stylesheet" href="/css/cat.css">
+    - <link rel="stylesheet" href="/css/readPercent.css">
+    - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
     
   bottom:
     - <canvas id="universe"></canvas>
@@ -960,7 +962,16 @@ inject:
     - <div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div> 
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
     - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
-    - <script defer data-pjax src="/js/cat.js"></script>
+    - <script defer data-pjax src="/js/cat.js"></script> #猫猫挂件
+    - <script defer data-pjax src="/js/readPercent.js"></script>
+    - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
+    - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
+    - <script defer src="/js/fomal.js"></script> #复制、F12弹窗
+    - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> #分享按钮
+    - <script src="/js/share.js"></script> #分享按钮
+    - <script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script> # 节日弹窗依赖
+    - <script defer src="/js/lunar.js"></script> # 农历计算
+    - <script defer src="/js/day.js"></script> # 节日弹窗
     # - <script defer src="/js/light.js"></script>
     # - <script src="xxxx"></script>
 
