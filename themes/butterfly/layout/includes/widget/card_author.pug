@@ -1,8 +1,17 @@
 if theme.aside.card_author.enable
   .card-widget.card-info
-    .is-center
-      .avatar-img
-        img(src=url_for(theme.avatar.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
+    //- .is-center
+    .author_top.is-center
+      //- .avatar-img
+      //-   img(src=url_for(theme.avatar.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
+      div.card-info-avatar
+        .avatar-img
+          img(src=url_for(theme.avatar.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
+        div.author-status-box
+          div.author-status
+            g-emoji.g-emoji(alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg") 🐟
+            span 认真摸鱼中
+            
       .author-info__name= config.author
       .author-info__description!= theme.aside.card_author.description || config.description
 

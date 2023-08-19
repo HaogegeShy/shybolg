@@ -154,7 +154,7 @@ post_meta:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: false
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # anchor
@@ -875,7 +875,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
@@ -1084,4 +1084,4 @@ electric_clock:
 
 # 主页卡片样式
 # Docs: https://akilar.top/posts/d6b69c49/
-index_card_style: slidecard # slidecard | multicard
+index_card_style: multicard # slidecard | multicard

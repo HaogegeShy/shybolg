@@ -1578,11 +1578,6 @@
     "mv" "~2"
     "safe-json-stringify" "~1"
 
-"hexo-butterfly-article-double-row@^1.0.2":
-  "integrity" "sha512-rKFj4uUrjerTzmZvagTI2orsoxmmMj9Runfdht/4SxKY7ARfpYBd6CAmc14Pi9IE1T+5n6VKMA+WW4g86ZZeFA=="
-  "resolved" "https://registry.npmmirror.com/hexo-butterfly-article-double-row/-/hexo-butterfly-article-double-row-1.0.2.tgz"
-  "version" "1.0.2"
-
 "hexo-butterfly-categories-card@^1.0.0":
   "integrity" "sha512-fyZrtxPwAv4CofTCNy57Rs6UzdnR2+gnmOeKaf+Ti8BH5kHGmX6Cdi+6lgSW3fPmR6BS4+XKtflGdRoKQpBxfw=="
   "resolved" "https://registry.npmmirror.com/hexo-butterfly-categories-card/-/hexo-butterfly-categories-card-1.0.0.tgz"
