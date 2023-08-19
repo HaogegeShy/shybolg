@@ -30,7 +30,9 @@ if theme.aside.card_author.enable
       a#card-info-btn(href=theme.aside.card_author.button.link)
         i(class=theme.aside.card_author.button.icon)
         span=theme.aside.card_author.button.text
-  
+        i.faa-passing.animated(style="padding-left:20px;display:inline-block;vertical-align:middle;")
+          svg.icon(style="height:28px;width:28px;fill:currentColor;position:relative;top:5px")
+            use(xlink:href='#icon-xiaoqiche')  
     if(theme.social)
         .card-info-social-icons.is-center
           !=partial('includes/header/social', {}, {cache: true})

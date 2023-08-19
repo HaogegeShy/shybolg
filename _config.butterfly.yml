@@ -302,9 +302,11 @@ aside:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false 
+  site_pv: false 
+  page_uv: false 
+  page_pv: false
+  
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -952,12 +954,13 @@ inject:
     - <link rel="stylesheet" href="/css/cat.css">
     - <link rel="stylesheet" href="/css/readPercent.css">
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
-    
+    - <span id="fps"></span> # 帧率检测
+
   bottom:
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
     - <script defer src="/js/cursor.js"></script>
-    - <script async src="//at.alicdn.com/t/c/font_4208366_fiifl9afe37.js"></script> # 引入阿里巴巴矢量图标库
+    - <script async src="//at.alicdn.com/t/c/font_4208366_nxitk4y0wo.js"></script> # 引入阿里巴巴矢量图标库
     # - <div class="aplayer no-destroy"  data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="true"> </div>
     - <div id="aplayer-oSEOhviA" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4895239160" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div> 
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
@@ -976,6 +979,10 @@ inject:
     - <script type="text/javascript" src="https://cdn1.tianli0.top/npm/jquery@latest/dist/jquery.min.js"></script> #右键菜单
     - <script type="text/javascript" src="/js/rightmenu.js"></script> #右键菜单
     - <script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script> #樱花
+    - <script async src="/js/console.js"></script> # F12控制台打印
+    - <script async src="/js/fps.js"></script> # 帧率检测
+    - <script async src="/js/title.js"></script> # 浏览器窗口标题
+
     
     # - <script defer src="/js/light.js"></script>
     # - <script src="xxxx"></script>
@@ -992,7 +999,7 @@ CDN:
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: jsdelivr
+  third_party_provider: cdnjs
 
   # Add version number to url, true or false
   version: false
@@ -1008,6 +1015,9 @@ CDN:
     # translate:
     # local_search:
     # algolia_js:
+    algolia_search_v4: https://cdn.staticfile.org/algoliasearch/4.14.3/algoliasearch-lite.umd.min.js
+    instantsearch_v4: https://cdn.staticfile.org/instantsearch.js/4.49.2/instantsearch.production.min.js
+    pjax: https://lib.baomitu.com/pjax/0.2.8/pjax.min.js
     # algolia_search:
     # instantsearch:
     # docsearch_js:
@@ -1019,12 +1029,12 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    # twikoo:
+    twikoo: https://cdn.staticfile.org/twikoo/1.6.8/twikoo.all.min.js
     # waline_js:
     # waline_css:
     # giscus:
-    # sharejs:
-    # sharejs_css:
+    sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
+    sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
     # mathjax:
     # katex:
     # katex_copytex:
@@ -1032,10 +1042,12 @@ CDN:
     # canvas_ribbon:
     # canvas_fluttering_ribbon:
     # canvas_nest:
-    # lazyload:
-    # instantpage:
-    # typed:
+    lazyload: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js
+    instantpage: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js
+    typed: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js
     # pangu:
+    fancybox_css_v4: https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css
+    fancybox_v4: https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js
     # fancybox_css:
     # fancybox:
     # medium_zoom:
@@ -1046,8 +1058,12 @@ CDN:
     # click_heart:
     # ClickShowText:
     # fontawesome:
+    fontawesomeV6: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
+    aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
+    aplayer_js: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
+    meting_js: https://cdn1.tianli0.top/npm/js-heo@1.0.12/metingjs/Meting.min.js
     # aplayer_css:
     # aplayer_js:
     # meting_js:
